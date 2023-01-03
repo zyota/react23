@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-
+import Header from "./component/Header";
+import Footer from "./component/Footer";
 function App() {
   const name = "Legendary Andy";
   function customStyle() {}
@@ -11,9 +12,12 @@ function App() {
       return <h1 style={customStyle()}>Hello stranger</h1>;
     }
   }
+
   return (
     <div className="App">
-      <header className="App-header">{greating(name)}</header>
+      <Header />
+      <div className="App-header">{greating(name)}</div>
+      <Footer />
     </div>
   );
 }
